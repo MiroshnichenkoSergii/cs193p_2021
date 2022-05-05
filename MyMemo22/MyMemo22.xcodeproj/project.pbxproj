@@ -15,6 +15,7 @@
 		EF2C140A27F0A6930014E2A2 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C140927F0A6930014E2A2 /* EmojiMemoryGame.swift */; };
 		EFE82CF127FCD356004141FF /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE82CF027FCD356004141FF /* Pie.swift */; };
 		EFE82CF327FCDDF0004141FF /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE82CF227FCDDF0004141FF /* AspectVGrid.swift */; };
+		EFE82CF727FE27E3004141FF /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE82CF627FE27E3004141FF /* Cardify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EF2C140927F0A6930014E2A2 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		EFE82CF027FCD356004141FF /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
 		EFE82CF227FCDDF0004141FF /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		EFE82CF627FE27E3004141FF /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				EF2C13F727EF36BB0014E2A2 /* EmojiMemoryGameView.swift */,
 				EFE82CF027FCD356004141FF /* Pie.swift */,
 				EFE82CF227FCDDF0004141FF /* AspectVGrid.swift */,
+				EFE82CF627FE27E3004141FF /* Cardify.swift */,
 				EF2C140727F0A51E0014E2A2 /* MemoryGame.swift */,
 				EF2C140927F0A6930014E2A2 /* EmojiMemoryGame.swift */,
 				EF2C13F927EF36BE0014E2A2 /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE82CF127FCD356004141FF /* Pie.swift in Sources */,
+				EFE82CF727FE27E3004141FF /* Cardify.swift in Sources */,
 				EF2C140827F0A51E0014E2A2 /* MemoryGame.swift in Sources */,
 				EFE82CF327FCDDF0004141FF /* AspectVGrid.swift in Sources */,
 				EF2C13F827EF36BB0014E2A2 /* EmojiMemoryGameView.swift in Sources */,

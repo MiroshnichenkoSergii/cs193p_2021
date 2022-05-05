@@ -92,6 +92,10 @@ class EmojiMemoryGame: ObservableObject {
         model.choose(card)
     }
     
+    func shuffle() {
+        model.shuffle()
+    }
+    
     func startNewGame() {
         chosenTheme = EmojiMemoryGame.chooseTheme()
         model = EmojiMemoryGame.createMemoryGame(of: chosenTheme)
