@@ -55,6 +55,7 @@ struct MemoryGame<Content> where Content: Equatable {
             cards[index].isMatched = false
             cards[index].isFaceUp = false
         }
+        score = 0
     }
     
     mutating func shuffle() {

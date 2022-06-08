@@ -11,6 +11,8 @@ struct EmojiMemoryGameView: View {
     
     @ObservedObject var game: EmojiMemoryGame
     
+    @State private var alertToShow: IdentifiableAlert?
+    
     var body: some View {
         VStack {
             score
@@ -37,15 +39,33 @@ struct EmojiMemoryGameView: View {
                         }
                 }
             }
-            
         }
         .foregroundStyle(LinearGradient(gradient: Gradient(
             colors: [Color(rgbaColor: game.chosenTheme.color), Color.brown]),
                                         startPoint: .topLeading,
                                         endPoint: .trailing))
         .padding()
-        
-//        Alert(title: Text("Game Over"), message: Text("Your score \(game.score)"), dismissButton: .default(Text("Ok")))
+        .alert(item: $alertToShow) { alertToShow in
+            alertToShow.alert()
+        }
+        .onChange(of: game.endGame) { status in
+            switch status {
+            case true:
+                endGameAlert()
+            default:
+                break
+            }
+        }
+    }
+    
+    private func endGameAlert() {
+        alertToShow = IdentifiableAlert(id: "End Game", alert: {
+            Alert(
+                title: Text("Game Over"),
+                message: Text("Your score \(game.score)"),
+                dismissButton: .default(Text("OK"))
+            )
+        })
     }
     
     var restart: some View {
@@ -111,7 +131,15 @@ struct EmojiMemoryGameView: View {
     
 }
 
-
+struct IdentifiableAlert: Identifiable {
+    var id: String
+    var alert: () -> Alert
+    
+    init(id: String, alert: @escaping () -> Alert) {
+        self.id = id
+        self.alert = alert
+    }
+}
 
 
 
